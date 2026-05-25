@@ -28,17 +28,9 @@ if (wheelLayout && wheelImage && spinButton && spinIcon && bonusItems) {
     wheelLayout.classList.remove("is-finished")
     wheelLayout.classList.add("is-spinning")
 
-    /*
-      На первой стадии можно остановиться на одном секторе,
-      на второй — на другом. Углы можешь потом подогнать под нужные сектора.
-    */
-    // const stopAngles = {
-    //   1: 360 * 5,
-    //   2: 360 * 5 + 180,
-    // }
-    // const nextRotation = currentRotation + stopAngles[targetStage]
+ 
 const fullSpins = 3
-const sectorOffset = targetStage === 1 ? 0 : 180
+const sectorOffset = targetStage === 1 ? 0 : 315
 const nextRotation = currentRotation + 360 * fullSpins + sectorOffset
     wheelImage.style.transition = "none"
     wheelImage.style.transform = `rotate(${currentRotation}deg)`

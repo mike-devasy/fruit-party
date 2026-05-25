@@ -8,20 +8,26 @@ left: 0;
       // top: 2.8vh;
 padding-block: 20px;
 	padding-inline: 110px;
-	min-height: 115px;
-		// @include adaptiveValue("padding-block", 50, 20, 0, $maxWidthContainer, 1500);
+	// min-height: 115px;
+	align-items: center;
+	@media (max-width:toEm(800)){
+		padding-inline: 20px; 
+	}
     &__container {
 			display: flex;
+			@media (max-width: toEm(1120)){
+				  	 justify-content: space-between; 
+			}
+			@media (max-width:toEm(800)){
+				 justify-content: center; 
+
+			}
     }
 
     &__logo, &__fruit-logo {
-		 
-				  @include adaptiveValue("width", 137, 100, 0, $maxWidthContainer, 1000);
-					// @include adaptiveValue("width", 235, 158, 0, 999, 375);
-
-					// margin: 0 auto;
-
-		@media screen and (orientation: landscape) and (max-height:420px) and (min-aspect-ratio:13/9){
+		 width: 137px;
+ 
+		@media screen and (orientation: landscape) and (max-height:520px) and (min-aspect-ratio:13/9){
 			display: none;
 			}
 
