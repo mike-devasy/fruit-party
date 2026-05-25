@@ -64,6 +64,7 @@
     height: var(--wheel-size);
     margin: 0 auto;
     border-radius: 50%;
+		cursor: pointer;
   }
  
   &__wheel-holder,
@@ -120,7 +121,7 @@
     padding: 0;
     border-radius: 50%;
     background: transparent;
-    cursor: pointer;
+   pointer-events: none;
     animation: spinButtonIdle 2s ease-in-out infinite;
     @media (any-hover: hover) {
       &:hover {

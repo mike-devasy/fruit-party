@@ -222,6 +222,7 @@ body {
   height: var(--wheel-size);
   margin: 0 auto;
   border-radius: 50%;
+  cursor: pointer;
 }
 .hero__wheel-holder, .hero__wheel-picture, .hero__spin-button, .hero__win-frame {
   position: absolute;
@@ -267,7 +268,7 @@ body {
   padding: 0;
   border-radius: 50%;
   background: transparent;
-  cursor: pointer;
+  pointer-events: none;
   animation: spinButtonIdle 2s ease-in-out infinite;
 }
 .hero__spin-icon {

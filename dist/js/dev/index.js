@@ -635,7 +635,7 @@ if (wheelLayout && wheelImage && spinButton && spinIcon && bonusItems) {
     };
     wheelImage.addEventListener("transitionend", onSpinEnd);
   };
-  spinButton.addEventListener("click", () => {
+  wheelLayout.addEventListener("click", () => {
     if (isSpinning) return;
     if (stage === 0) {
       spinWheel(1);

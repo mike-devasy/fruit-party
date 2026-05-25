@@ -75,19 +75,30 @@ const nextRotation = currentRotation + 360 * fullSpins + sectorOffset
 
     wheelImage.addEventListener("transitionend", onSpinEnd)
   }
+wheelLayout.addEventListener("click", () => {
+  if (isSpinning) return
 
-  spinButton.addEventListener("click", () => {
-    if (isSpinning) return
+  if (stage === 0) {
+    spinWheel(1)
+    return
+  }
 
-    if (stage === 0) {
-      spinWheel(1)
-      return
-    }
+  if (stage === 1) {
+    spinWheel(2)
+  }
+})
+  // spinButton.addEventListener("click", () => {
+  //   if (isSpinning) return
 
-    if (stage === 1) {
-      spinWheel(2)
-    }
-  })
+  //   if (stage === 0) {
+  //     spinWheel(1)
+  //     return
+  //   }
+
+  //   if (stage === 1) {
+  //     spinWheel(2)
+  //   }
+  // })
 }
 
  
