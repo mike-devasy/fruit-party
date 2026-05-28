@@ -994,7 +994,7 @@ body::after {
 }
 @media (max-width: 68.75em){
   .hero__bonus-items {
-    top: -2%;
+    top: 0;
   }
   .hero__character--orange {
     width: calc(var(--wheel-size) * 1);
@@ -1051,6 +1051,7 @@ body::after {
   }
   .hero__bonus-items {
     justify-content: space-around;
+    top: -5%;
   }
   .hero__bonus-item {
     width: 32vw;
@@ -1117,9 +1118,6 @@ body::after {
   .hero__fruits--mobile {
     top: auto;
     bottom: 0;
-  }
-  .hero__bonus-items {
-    top: -5%;
   }
 }
 @media (max-width: 29.99875em){
