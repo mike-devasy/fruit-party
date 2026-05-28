@@ -1019,11 +1019,6 @@ body::after {
     display: none;
   }
 }
-@media (max-width: 50rem) and (max-width: 50em){
-  .hero__bonus-items {
-    justify-content: space-around;
-  }
-}
 @media (max-width: 50rem){
   .hero {
     --wheel-size: min(94vw, 68svh);
@@ -1050,6 +1045,10 @@ body::after {
     top: 0;
     bottom: auto;
     width: 100%;
+  }
+  .hero__bonus-items {
+    top: 0;
+    justify-content: space-around;
   }
   .hero__bonus-item {
     width: 32vw;
