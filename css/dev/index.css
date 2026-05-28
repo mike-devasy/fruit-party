@@ -1049,7 +1049,7 @@ body::after {
   .hero__bonus-items {
     justify-content: space-around;
     width: 120%;
-    top: -5%;
+    top: -7%;
   }
   .hero__bonus-item {
     width: 32vw;
@@ -1116,6 +1116,9 @@ body::after {
   .hero__fruits--mobile {
     top: auto;
     bottom: 0;
+  }
+  .hero__bonus-items {
+    top: -5%;
   }
 }
 @media (max-width: 29.99875em){
