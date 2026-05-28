@@ -994,7 +994,7 @@ body::after {
 }
 @media (max-width: 68.75em){
   .hero__bonus-items {
-    top: 0;
+    top: -2%;
   }
   .hero__character--orange {
     width: calc(var(--wheel-size) * 1);
