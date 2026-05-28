@@ -963,13 +963,10 @@ body::after {
 }
 @media (max-width: 96.875rem){
   .hero {
-    --wheel-size: min(62dvh, 38.75rem);
+    --wheel-size: min(62svh, 38.75rem);
   }
   .hero__titles {
     margin-bottom: calc(var(--wheel-size) * 0.12);
-  }
-  .hero__bonus-items {
-    width: 120%;
   }
 }
 @media (max-width: 96.875em){
@@ -1051,6 +1048,7 @@ body::after {
   }
   .hero__bonus-items {
     justify-content: space-around;
+    width: 120%;
     top: -5%;
   }
   .hero__bonus-item {
